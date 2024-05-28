@@ -35,13 +35,18 @@
     <main>
         <div class="login-container">
             <h2>Connexion</h2>
-            <form action="dashboard.html" method="POST">
+            <form action="login.php" method="POST">
                 <label for="identifiant">Identifiant:</label>
                 <input type="text" id="identifiant" name="identifiant" placeholder="Entrez votre identifiant" required>
                 <label for="motdepasse">Mot de Passe:</label>
                 <input type="password" id="motdepasse" name="motdepasse" placeholder="Entrez votre mot de passe" required>
                 <button type="submit">Se Connecter</button>
             </form>
+            <?php
+                if(isset($_GET['error'])) {
+                    echo '<p style="color:red;">'.$_GET['error'].'</p>';
+                }
+            ?>
         </div>
     </main>
 </body>
