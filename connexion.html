@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Connexion</title>
+</head>
+<body>
+    <header>
+        <div class="principale">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="logo_dragon.png" alt="logo du site">
+                </a>
+            </div>
+            <ul>
+                <li>
+                    <a href="#">Services</a>
+                </li>
+                <li>
+                    <a href="#">A propos</a>
+                </li>
+                <li>
+                    <a href="#">Contact</a>
+                </li>
+                <div>
+                    <a href="connexion.html" class="connexion-logo">
+                        <img src="logo_porte_des_enfers.png" alt="logo connexion">
+                    </a>
+                </div>
+            </ul>
+        </div>
+    </header>
+    <main>
+        <div class="login-container">
+            <h2>Connexion</h2>
+            <form action="dashboard.html" method="POST">
+                <label for="identifiant">Identifiant:</label>
+                <input type="text" id="identifiant" name="identifiant" placeholder="Entrez votre identifiant" required>
+                <label for="motdepasse">Mot de Passe:</label>
+                <input type="password" id="motdepasse" name="motdepasse" placeholder="Entrez votre mot de passe" required>
+                <button type="submit">Se Connecter</button>
+            </form>
+        </div>
+    </main>
+</body>
+</html>
