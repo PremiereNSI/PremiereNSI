@@ -18,14 +18,14 @@ body.light-mode {
 }
 
 header {
-    background-image: url(background_image.jpg);
+    background-image: url('background_image.jpg');
     height: 100vh;
     background-size: cover;
     background-position: center;
 }
 
 body.light-mode header {
-    background-image: url(alternate_background_image.jpg);
+    background-image: url('alternate_background_image.jpg');
 }
 
 header .principale {
@@ -52,10 +52,6 @@ body.light-mode header .principale {
     height: auto;
     margin-right: 10px;
     border-radius: 50%;
-}
-
-body.light-mode .logo img {
-    content: url(alternate_logo_dragon.png);
 }
 
 ul {
@@ -105,10 +101,6 @@ ul li.active a {
     height: auto;
     border-radius: 50%;
     transition: filter 0.3s ease;
-}
-
-body.light-mode .connexion-logo img {
-    content: url(alternate_logo_porte_des_enfers.png);
 }
 
 .connexion-logo:hover img {
@@ -322,9 +314,37 @@ body.light-mode .login-container label {
 
 input:checked + .slider {
     background-color: #f9f9f9;
+    box-shadow: 0 0 20px rgba(9, 117, 241, 0.8);
+    border: 2px solid #0974f1;
 }
 
 input:checked + .slider:before {
     transform: translateX(26px);
     background-color: #050505; /* Changez cette couleur pour celle que vous voulez après l'activation */
+}
+
+/* Styles pour le conteneur PDF */
+.pdf-container {
+    width: 80%;
+    height: 600px;
+    border: 1px solid #ccc;
+    margin: 20px auto;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.pdf-container h2, .pdf-container a {
+    color: #333;
+}
+
+.pdf-container a {
+    display: block;
+    margin-top: 10px;
+    text-decoration: none;
+    color: #007BFF;
+}
+
+.pdf-container a:hover {
+    text-decoration: underline;
 }
