@@ -15,22 +15,16 @@
                 </a>
                 <div class="theme-switch-wrapper">
                     <label class="theme-switch" for="checkbox">
-                        <input type="checkbox" id="checkbox" />
+                        <input type="checkbox" id="checkbox" onclick="toggleTheme()" />
                         <div class="slider round"></div>
                     </label>
                     <em>Activer le mode clair</em>
                 </div>
             </div>
             <ul>
-                <li>
-                    <a href="#">Services</a>
-                </li>
-                <li>
-                    <a href="#">A propos</a>
-                </li>
-                <li>
-                    <a href="#">Contact</a>
-                </li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">A propos</a></li>
+                <li><a href="#">Contact</a></li>
                 <div>
                     <a href="connexion.html" class="connexion-logo">
                         <img src="logo_porte_des_enfers.png" alt="logo connexion">
@@ -38,13 +32,13 @@
                 </div>
             </ul>
         </div>
-    </header>
-    <main>
-        <div class="secure-content">
-            <h1>Bienvenue sur la Page Sécurisée</h1>
-            <p>Cette page est accessible uniquement aux utilisateurs connectés.</p>
+        <div class="contenu">
+            <div class="text-boite">
+                <h2>Vous pouvez télécharger le rapport du projet ici:</h2>
+                <a href="Rapport NSI.pdf"download class="btn"><span></span> Télécharger le document PDF</a>
+            </div>
         </div>
-    </main>
+    </header>
     <script src="script.js"></script>
 </body>
 </html>
