@@ -13,11 +13,15 @@
                 <a href="index.html">
                     <img src="logo_dragon.png" alt="logo du site">
                 </a>
+                <div class="theme-switch-wrapper">
+                    <label class="theme-switch" for="checkbox">
+                        <input type="checkbox" id="checkbox" />
+                        <div class="slider round"></div>
+                    </label>
+                    <em>Activer le mode clair</em>
+                </div>
             </div>
             <ul>
-                <li>
-                    <a href="index.html">Accueil</a>
-                </li>
                 <li>
                     <a href="#">Services</a>
                 </li>
@@ -36,9 +40,11 @@
         </div>
     </header>
     <main>
-        <h1>Bienvenue sur la Page Sécurisée</h1>
-        <p>Cette page est accessible uniquement aux utilisateurs connectés.</p>
+        <div class="secure-content">
+            <h1>Bienvenue sur la Page Sécurisée</h1>
+            <p>Cette page est accessible uniquement aux utilisateurs connectés.</p>
+        </div>
     </main>
+    <script src="script.js"></script>
 </body>
 </html>
-

@@ -9,13 +9,13 @@
         function redirectToPage() {
             const identifiant = document.getElementById('identifiant').value;
             const password = document.getElementById('motdepasse').value;
-            const preStoredIdentifiant = "AlainMalin";
-            const preStoredPassword = "Groupe2Demon?";
+            const identifiant_admin = "AlainMalin";
+            const mot_de_passe_admin = "Groupe2Demon?";
 
-            if (identifiant === preStoredIdentifiant && password === preStoredPassword) {
+            if (identifiant === identifiant_admin && password === mot_de_passe_admin) {
                 window.location.href = 'page_securisee.html';
             } else {
-                if (identifiant !== preStoredIdentifiant) {
+                if (identifiant !== identifiant_admin) {
                     alert('Identifiant incorrect.');
                 } else {
                     alert('Mot de passe incorrect.');
@@ -31,6 +31,13 @@
                 <a href="index.html">
                     <img src="logo_dragon.png" alt="logo du site">
                 </a>
+            </div>
+            <div class="theme-switch-wrapper">
+                <label class="theme-switch" for="checkbox">
+                    <input type="checkbox" id="checkbox" />
+                    <div class="slider round"></div>
+                </label>
+                <em>Activer le mode clair</em>
             </div>
             <ul>
                 <li>
