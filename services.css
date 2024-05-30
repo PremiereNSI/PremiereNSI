@@ -266,3 +266,60 @@ body.theme-alt #logoSite {
 body.theme-alt #logoConnexion {
     content: url(alternate_logo_porte_des_enfers.png);
 }
+
+/*Slider */
+.login-container button:hover {
+    background-color: #87CEEB;
+}
+
+.theme-switch-wrapper {
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+}
+
+.theme-switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+}
+
+.theme-switch input {
+    display: none;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #080808;
+    transition: 0.4s;
+    border-radius: 34px;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: rgb(250, 248, 248);
+    transition: 0.4s;
+    border-radius: 50%;
+}
+
+input:checked + .slider {
+    background-color: #f9f9f9;
+    box-shadow: 0 0 20px rgba(9, 117, 241, 0.8);
+    border: 2px solid #0974f1;
+}
+
+input:checked + .slider:before {
+    transform: translateX(26px);
+    background-color: #050505; /* Changez cette couleur pour celle que vous voulez après l'activation */
+}
